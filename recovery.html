@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>AppName</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <a class="header__main-link" href="index.html">AppName</a>
+        </div>
+        <div class="col-8">
+          <div class="row justify-content-end">
+            <div class="col-auto">
+              <a href="registration.html" class="header__link">Регистрация</a>
+            </div>
+            <div class="col-auto">
+              <a href="login.html" class="header__link">Войти</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-recovery">
+    <h1 class="visually-hidden">Форма восстановления пароля</h1>
+    <section class="main-recovery__form form form--recovery">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-6">
+            <h2 class="form__title">Восстановление пароля</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-6">
+            <form class="form__wrapper" action="#" method="POST">
+              <div class="form__section form__section--recovery">
+                <label class="form__label" for="email">E-mail</label>
+                <input class="form__input" type="email" id="email" name="email">
+                <p class="form__invalid-text display-none">Пользователь не найден</p>
+              </div>
+              <div class="form__section form__section--submit">
+                <button class="button" type="submit">Отправить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    document.querySelector('.header').classList.add('header--form');
+  </script>
+</body>
+
+</html>
