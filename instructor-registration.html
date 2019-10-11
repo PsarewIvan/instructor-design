@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>AppName</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+  <header class="header header--form">
+    <div class="container header__navigation">
+      <nav class="navbar navbar-expand-md navbar-light">
+        <a class="navbar-brand js-main-link" href="index.html">AppName</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="user-registration.html">Регистрация</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Войти</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-instructor-reg">
+    <h1 class="visually-hidden">Форма регистрации инструктора</h1>
+    <section class="main-instructor-reg__form form form--instructor-reg">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-6">
+            <h2 class="form__title">Регистрация инструктором</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-6">
+            <form class="form__wrapper" action="#" method="POST">
+              <div class="form__section form__section--instructor-name">
+                <label class="form__label" for="instructor-name">Имя</label>
+                <input class="form__input" type="text" id="instructor-name" name="instructor-name" minlength="2">
+                <p class="form__invalid-text display-none">Имя слишком короткое</p>
+              </div>
+              <div class="form__section form__section--instructor-email">
+                <label class="form__label" for="instructor-email">E-mail</label>
+                <input class="form__input" type="email" id="instructor-email" name="instructor-email" minlength="5">
+                <p class="form__invalid-text display-none">E-mail слишком короткий</p>
+              </div>
+              <div class="form__section form__section--sports-check">
+                <p class="form__description">Виды спорта</p>
+                <div class="form__checkbox-item">
+                  <input class="form__checkbox pointer" type="checkbox" id="skiing" name="skiing">
+                  <label class="form__label form__label--checkbox pointer" for="skiing">Горные лыжи</label>
+                </div>
+                <div class="form__checkbox-item">
+                  <input class="form__checkbox pointer" type="checkbox" id="snowboard" name="snowboard">
+                  <label class="form__label form__label--checkbox pointer" for="snowboard">Сноуборд</label>
+                </div>
+                <p class="form__invalid-text display-none">Выберите виды спорта по которым Вы можете инструктировать</p>
+              </div>
+              <div class="form__section form__section--instructor-pass">
+                <label class="form__label" for="instructor-pass">Пароль</label>
+                <input class="form__input" type="password" id="instructor-pass" name="instructor-pass" minlength="5">
+                <p class="form__invalid-text display-none">Пароль слишком короткий</p>
+              </div>
+              <div class="form__section form__section--submit">
+                <button class="button" type="submit">Зарегистрироваться</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="alert alert-success alert-dismissible fade show container alert-my" role="alert">
+        <p class="alert-my__text">Мы отправили Вам на почту инструкцию по активации аккаунта</p>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.min.js"></script>
+
+</body>
+
+</html>

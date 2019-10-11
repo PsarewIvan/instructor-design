@@ -9,24 +9,27 @@
   <link rel="stylesheet" href="css/main.min.css">
 </head>
 
-<body>
+<body class="js-index">
   <header class="header">
-    <div class="container">
-      <div class="row">
-        <div class="col-4">
-          <a class="header__main-link" href="index.html">AppName</a>
+    <div class="container header__navigation">
+      <nav class="navbar navbar-expand-md navbar-light">
+        <a class="navbar-brand js-main-link" href="index.html">AppName</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="user-registration.html">Регистрация</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Войти</a>
+            </li>
+          </ul>
         </div>
-        <div class="col-8">
-          <div class="row justify-content-end">
-            <div class="col-auto">
-              <a href="registration.html" class="header__link">Регистрация</a>
-            </div>
-            <div class="col-auto">
-              <a href="login.html" class="header__link">Войти</a>
-            </div>
-          </div>
-        </div>
-      </div>
+      </nav>
     </div>
   </header>
 
@@ -83,10 +86,28 @@
     </div>
   </main>
 
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-10">
+        <div>
+          <a href="change-pass.html">Смена пароля</a>
+        </div>
+        <div>
+          <a href="instructor-registration.html">Регистрация инструктора</a>
+        </div>
+        <div>
+          <a href="user-profile.html">Профиль ученика</a>
+        </div>
+        <div>
+          <a href="instructor-profile.html">Профиль инструктора</a>
+        </div>
+      </div>
+    </div>
+  </div>
   <footer class="footer">
     <div class="container">
-      <div class="row">
-        <div class="col">
+      <div class="row justify-content-center">
+        <div class="col-10">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dignissimos ex praesentium dolore rem quisquam suscipit, provident sequi! Laudantium quos placeat quod ipsa quam beatae magni ducimus magnam a asperiores?
           Voluptas praesentium dolores, est et voluptatibus enim placeat, doloribus sunt, maiores adipisci recusandae esse nostrum? Consequuntur, voluptatibus quidem! Recusandae ducimus quo reiciendis. Aliquam, similique nostrum placeat pariatur rem eum esse.
           Eius veritatis dolore nemo itaque est minima soluta, expedita excepturi corrupti molestiae ipsum eaque, nihil, magni deleniti enim temporibus sequi provident nisi atque! Dolorem ipsam sequi, voluptate labore natus quae!
@@ -101,10 +122,8 @@
       </div>
     </div>
   </footer>
-  
-  <script>
-    document.querySelector('.header__main-link').removeAttribute('href');
-  </script>
+  <script src="js/main.min.js"></script>
+
 </body>
 
 </html>
