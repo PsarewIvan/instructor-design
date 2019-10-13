@@ -45,33 +45,37 @@
         <div class="row justify-content-center">
           <div class="col-6">
             <form class="form__wrapper" action="#" method="POST">
-              <div class="form__section form__section--user-name">
+              <fieldset class="form__section form__section--user-name">
                 <label class="form__label" for="user-name">Имя</label>
                 <input class="form__input" type="text" id="user-name" name="user-name" minlength="2">
                 <p class="form__invalid-text display-none">Имя слишком короткое</p>
-              </div>
-              <div class="form__section form__section--user-email">
+              </fieldset>
+              <fieldset class="form__section form__section--user-email">
                 <label class="form__label" for="user-email">E-mail</label>
                 <input class="form__input" type="email" id="user-email" name="user-email" minlength="5">
                 <p class="form__invalid-text display-none">E-mail слишком короткий</p>
-              </div>
-              <div class="form__section form__section--user-pass">
+              </fieldset>
+              <fieldset class="form__section form__section--user-pass">
                 <label class="form__label" for="user-pass">Пароль</label>
                 <input class="form__input" type="password" id="user-pass" name="user-pass" minlength="5">
                 <p class="form__invalid-text display-none">Пароль слишком короткий</p>
-              </div>
-              <div class="form__section form__section--submit">
+              </fieldset>
+              <fieldset class="form__section form__section--submit">
                 <button class="button" type="submit">Зарегистрироваться</button>
-              </div>
+              </fieldset>
             </form>
           </div>
         </div>
       </div>
-      <div class="alert alert-success alert-dismissible fade show container alert-my" role="alert">
-        <p class="alert-my__text">Мы отправили Вам на почту инструкцию по активации аккаунта</p>
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+      <div class="container alert-my">
+        <div class="row justify-content-center">
+          <div class="alert alert-success alert-dismissible fade show col-6" role="alert">
+            <p class="alert-my__text">Мы отправили Вам на почту инструкцию по активации аккаунта</p>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        </div>
       </div>
     </section>
   </main>
